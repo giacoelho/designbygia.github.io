@@ -1,23 +1,44 @@
 - name: Home
   path: index.html
   section_id: home
+- name: About Us
+  path: index.html
+  section_id: home
+  children:
+    - name: Our Team
+      path: team.html
+    - name: Our Board
+      path: our-board.html
+    - name: RfG the News
+      path: team.html
+    - name: Contact Us
+      path: contact.html
+- name: Impact
+  path: impact.html
+  section_id: impact
 - name: About
   path: about.html
   section_id: about
-- name: Services
-  path: services.html
-  section_id: services
-- name: Portfolio
-  path: portfolio.html
-  section_id: portfolio
+- name: Events
+  path: events.html
+  section_id: events
   children:
-    - name: Portfolio
-      path: portfolio.html
-    - name: Portfolio item
-      path: portfolio-item.html
-- name: Contact
-  path: contact.html
-  section_id: contact
+    - name: RfG in DC
+      path: rfgdc.html
+    - name: RfG by the Bay
+      path: rfgbtb.html
+- name: Join Us
+  path: joinus.html
+  section_id: join_us
+  children:
+    - name: Volunteer
+      path: volunteer.html
+    - name: Non-Profit Partnership
+      path: non-profit.html
+    - name: Sponsorships
+      path: sponsorships.html
+    - name: Github Pull Requests
+      path: gh-prs.html
 - name: Blog
   path: blog/
   section_id: blog
