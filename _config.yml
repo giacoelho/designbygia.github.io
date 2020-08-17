@@ -10,7 +10,8 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 
 
 paginate: 3
-paginate_path: "blog/page:num"
+paginate_path: "/blog/page:num/"
