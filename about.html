@@ -20,7 +20,7 @@ testimonials:
     author: David White, Designer at Huglab
 ---
 
-<div class='full parallax' style='background-image: url(images/stock/about-us.jpg); color: #fff;'>
+<div class='full parallax' style='background-image: url(images/non_stock/bg-2400x1000.png); color: #fff;'>
   <div class='row'>
     <div class='twelve columns'>
       {% include section-header.html title="About us" color="#fff" tagline="Know something about our team" class="big" %}
@@ -31,27 +31,63 @@ testimonials:
 
 <div class='full'>
   <div class='row'>
-    <div class='medium-6 columns'>
-      <h3>Our history</h3>
-      <p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.</p>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.</p>
+    <div class='medium-3 columns'>
+      <h2> Mission </h2>
     </div>
-    <div class='medium-6 columns'>
-      <h3>Our skills</h3>
-      <div class='mod modBarGraph'>
-        <ul class='bars'>
-          {% for skill in page.skills %}
-            <li>
-              <h4 style=''>
-                {{skill.title}}
-                <strong>{{skill.percentage}}%</strong>
-              </h4>
-              <p class='highlighted' data-percent='{{skill.percentage}}'></p>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
+    <div class='medium-9 columns'>
+      <p>Our mission at Ruby for Good is to deliver specialized software development solutions to nonprofit organizations to bolster their critical missions, build an inclusive technology community, and provide technology-focused educational opportunities to underserved communities.</p>
     </div>
+  </div>
+  <hr/>
+  <div class='row'>
+    <div class='medium-3 columns'>
+      <h2>Vision</h2>
+    </div>
+    <div class='medium-9 columns'>
+      <p>Ruby for Good, with our partners, will make technology accessible to individuals and nonprofit organizations, and build a more inclusive technology community.</p>
+    </div>
+  </div>
+  <hr/>
+  <div class='row'>
+    <div class='medium-3 columns'>
+      <h2>History</h2>
+    </div>
+    <div class='medium-9 columns'>
+      <p>In 2014, Ruby for Good was founded by Sean Marcia (link to bio) to fill the gap created by expensive technology solutions that were not easily accessible by nonprofit organizations serving vulnerable communities. His vision was to create open source solutions that could be used by all, driven by an inclusive community of technologists, of all skill levels, while creating educational and career opportunities for contributors from vulnerable communities.</p>
+    </div>
+  </div>
+</div>
+
+<div class="spacing"></div>
+
+<div class="row">
+    <div class="large-12 columns">
+        {% include section-header.html title="Our Core Values" %}
+        <div class="spacing"></div>
+    </div>
+</div>
+
+<div class="row">
+  <div class="medium-4 large-4 columns">
+    {% include icon-text.html title='Inclusivity and Equity' desc="Ruby for Good values inclusivity and equity for all, and strives above all else to ensure that gooders such as contributors, partners, stakeholders, and sponsors are treated with respect and dignity. We seek out the inclusion of differences as learning opportunities and ensure that words and actions matter. " icon_class='fa fa-handshake' delay='0' shape_class='icon-text-circle' %}
+  </div>
+  <div class="medium-4 large-4 columns">
+    {% include icon-text.html title='Commitment to Our Contributors' desc="We truly value the generosity of our contributors that make the work of Ruby for Good possible. We believe in supporting them with meaningful and ongoing opportunities for impact, growth, and leadership, and enable them to reach their full potential, uplifting them in their careers and academic pursuits, and engaging them through their contributions." icon_class='fa fa-users' delay='200' shape_class='icon-text-circle' %}
+  </div>
+  <div class="medium-4 large-4 columns">
+    {% include icon-text.html title='Commitment to Our Nonprofit Partners' desc="Our nonprofit partner organizations serve critical missions in the most vulnerable communities nationwide. We believe in the vitality of their work and bolster the efforts and effectiveness by providing open source solutions that increase efficiency and drive impact. " icon_class='fa fa-building' delay='400' shape_class='icon-text-circle' %}
+  </div>
+</div>
+
+<div class="row">
+  <div class="medium-4 large-4 columns">
+    {% include icon-text.html title='Communication' desc="We value honest and direct communication as essential to articulating our vision and goals, bolstering strong relationships, overcoming challenges, and collaborating with our contributors,  nonprofit partners, and companies and foundations that believe in our mission." icon_class='fa fa-comments' delay='0' shape_class='icon-text-circle' %}
+  </div>
+  <div class="medium-4 large-4 columns">
+    {% include icon-text.html title='Agency' desc="We believe in the potential of all technologists, of all skill levels, from all walks of life, that enrich our collaborative work environment . We commit to making full use of our own agency as individuals and as an organization in service of our goals and making the world gooder." icon_class='fa fa-check-square' delay='200' shape_class='icon-text-circle' %}
+  </div>
+  <div class="medium-4 large-4 columns">
+    {% include icon-text.html title='Impact' desc="Effecting large-scale, long term change requires ongoing innovation, learning, and sustained effort. We hold ourselves to meaningful and measurable outcomes, evaluate our successes and challenges openly, and act on what we learn, to drive intrinsic change. " icon_class='fa fa-hand-rock' delay='400' shape_class='icon-text-circle' %}
   </div>
 </div>
 

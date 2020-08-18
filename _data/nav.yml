@@ -2,8 +2,8 @@
   path: index.html
   section_id: home
 - name: About Us
-  path: index.html
-  section_id: home
+  path: about.html
+  section_id: about
   children:
     - name: Our Team
       path: team.html
@@ -16,9 +16,6 @@
 - name: Impact
   path: impact.html
   section_id: impact
-- name: About
-  path: about.html
-  section_id: about
 - name: Events
   path: events.html
   section_id: events

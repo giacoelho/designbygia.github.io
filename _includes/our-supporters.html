@@ -1,0 +1,24 @@
+<div class='full parallax' style='background-image: url(/images/non_stock/leaf-2400x1600.png); color: #fff;'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Who Believes in Us" color="#fff" %}
+      <div class='spacing'></div>
+      <p>
+        Something here about these folks supporting us and our mission, blah blah blah.
+      </p>
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='mod modClients' data-slides_to_show='4'>
+        <div class='clients'>
+          {% for client in site.data.clients %}
+            <div><a href="{{client.url}}"><img alt="" src="{{client.image}}" /></a></div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='two spacing'></div>
+</div>
