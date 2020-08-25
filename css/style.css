@@ -3858,12 +3858,12 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 /*  color: #5b5963;*/
 /*}*/
 
-/*.module-title:after {*/
-/*  content: "}";*/
-/*  color: #3196f3;*/
-/*}*/
+.module-title:after {
+  content: "}";
+  color: #3196f3;
+}
 
-/*.module-title:before {*/
-/*  content: "{";*/
-/*  color: #3196f3;*/
-/*}*/
+.module-title:before {
+  content: "{";
+  color: #3196f3;
+}
