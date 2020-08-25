@@ -10,32 +10,39 @@
     - name: Our Board
       path: our-board.html
     - name: RfG the News
-      path: team.html
+      path: blog/
     - name: Contact Us
       path: contact.html
-- name: Impact
-  path: impact.html
-  section_id: impact
+- name: Our Work
+  path: our-work.html
+  section_id: ourwork
+  children:
+    - name: Impact
+      path: impact.html
+    - name: Skills Based Volunteering
+      path: skills-based.html
 - name: Events
   path: events.html
   section_id: events
   children:
     - name: RfG in DC
-      path: rfgdc.html
+      url: https://rubyforgood.org
     - name: RfG by the Bay
-      path: rfgbtb.html
+      url: https://rubybythebay.org
 - name: Join Us
   path: joinus.html
   section_id: join_us
   children:
     - name: Volunteer
       path: volunteer.html
+    - name: Skills Based Volunteering
+      path: skills-based.html
     - name: Non-Profit Partnership
       path: non-profit.html
-    - name: Sponsorships
+    - name: GitHub Sponsorships
       path: sponsorships.html
-    - name: Github Pull Requests
-      path: gh-prs.html
+    - name: Coding Retreats
+      path: coding-retreats.html
 - name: Blog
   path: blog/
   section_id: blog
