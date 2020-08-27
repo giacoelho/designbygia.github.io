@@ -1,5 +1,14 @@
 source "https://rubygems.org"
-gem 'github-pages', group: :jekyll_plugins
-gem 'rouge'
-gem 'rake'
+
+gem "jekyll"
+
+group :jekyll_plugins do
+  gem "github-pages"
+  # gem "jekyll-paginate"
+  # gem "jekyll-feed"
+end
+
+gem "rouge"
+gem "rake"
+
 ruby "2.7.1"

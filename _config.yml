@@ -12,7 +12,6 @@ github_username: rubyforgood
 # Build settings
 lsi: false
 safe: true
-source: "/_site/"
 incremental: false
 highlighter: rouge
 gist:
@@ -20,9 +19,12 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
+pre_build:
+  commands:
+    - export LC_ALL="C.UTF-8"
+    - export LANG="en_US.UTF-8"
+    - export LANGUAGE="en_US.UTF-8"
 
 # Plugin configuration settings
-paginate: 5
-paginate_path: "/blog/page:num/"
-
-plugins: [jekyll-paginate, jekyll-feed]
+# paginate: 5
+# paginate_path: "/blog/page:num/"
