@@ -21,6 +21,9 @@
 13. Contact
 14. Blog
 15. Pagination
+16. ScrollUp
+17. Results
+18. Our Supporters
 */
 
 
@@ -2200,7 +2203,7 @@ blockquote {
 }
 
 
-/* ---------------- 5. Results ---------------- */
+/* ---------------- 17. Results ---------------- */
 #results-container {
 	margin-top: 2.5rem;
 }
@@ -2214,3 +2217,7 @@ blockquote {
 	text-transform: capitalize;
 	font-weight: 600;
 }
+
+/* ---------------- 18. Our Supporters ---------------- */
+/* https://kenwheeler.github.io/slick/ */
+/* https://github.com/kenwheeler/slick/ */
