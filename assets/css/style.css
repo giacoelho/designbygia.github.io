@@ -1060,7 +1060,8 @@ label {
 }
 .owl-carousel .owl-item img {
 	display: block;
-	width: inherit;
+	width: 100%
+	/* width: inherit; */
 }
 .cta-area {
 	background-position: center top;
@@ -1391,7 +1392,7 @@ label {
 }
 .owl-carousel .owl-item .single-clients img {
 	display: inline-block;
-	width: inherit;
+	width: 950%;
 }
 
 
