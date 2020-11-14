@@ -1,10 +1,10 @@
 <section class="team-area grey-bg pt-50 pb-100">
   <div class="container">
 
-    <!-- Quote -->
+    <!-- Team Member Name -->
     <div class="row justify-content-center">
-      <div class="col-lg-6 col-lg-offset-3 mx-auto team-member-line pb-20">
-        <h4 class="team-member-quote">"{{ page.quote }}"</h4>
+      <div class="col-lg-6 col-lg-offset-3 mx-auto team-member-line pb-10">
+        <h4 class="team-member-name">{{ page.first_name }} {{ page.last_name }}</h4>
       </div><!-- /col-lg-6 col-lg-offset-3 -->
     </div><!-- /row -->
 
@@ -31,15 +31,17 @@
         </div><!-- /inner-container -->
 
         <!-- Bio Content -->
-        <h3 class="team-member-header">Learn about {{ page.first_name }}</h3>
+        <h3 class="team-member-position">{{ page.position }}</h3>
         {% for content in page.write_up %}
           <p>{{ content.paragraph }}</p>
         {% endfor %}
 
         <!-- Social links -->
-        <h5 class="team-member-contacts pb-50">
+        <h5 class="team-member-contacts pt-20 pb-50">
           {% for platform in page.social %}
-            <a href="{{ platform.link }}"><i class="fab fa-{{ platform.icon }}"></i>&nbsp;&nbsp;{{ platform.handle }}</a>&nbsp;|&nbsp; 
+            {% if platform.link %}
+              <a href="{{ platform.link }}"><i class="fab fa-{{ platform.icon }}"></i>&nbsp;&nbsp;{{ platform.handle }}</a>&nbsp;|&nbsp;
+            {% endif %}
           {% endfor %}
           <a href="mailto:{{ page.email }}"><i class="fas fa-envelope"></i>&nbsp;&nbsp;{{ page.email }}</a>
         </h5>
